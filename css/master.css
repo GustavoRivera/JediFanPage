@@ -1,0 +1,249 @@
+
+.cen { text-align: center; }
+.izda { text-align: left; }
+.dcha { text-align: right; }
+.jus { text-align: justify; }
+
+.top { vertical-align: top; }
+.mid { vertical-align: middle; }
+.bot { vertical-align: bottom; }
+
+
+.contenedorFoto{
+    border-style: solid;
+    border-width: 1px;
+    border-color: #999999;
+    width: 32%;
+    float: left;
+    margin-right: 1%;
+    margin-bottom: 2%;
+    border-radius: 3%;
+
+}
+
+.fotos{
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 5%;
+    margin-bottom: 15%;
+    border-radius: 3%;
+}
+
+.wallpaperHome{
+    width: 98.8vw;
+    height: 100vh;
+}
+
+.fondo{
+ 
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    
+}
+.img1{
+    width: 100vw;
+    display: block
+}
+.img2{
+    width: 100vw;
+    display: none;
+}
+
+.apiubication{
+    position: absolute;
+    margin-top: 35%;
+    margin-left: 10%;
+    width: 25%;
+}
+.tablaMenu{
+    position:fixed;
+    width: 100%;
+    border-bottom-color: #fff;
+    border-bottom-style: solid;
+    border-bottom-width: 2px;
+    z-index: 100;
+}
+.formularioContainer{
+    position: absolute;
+    top: 20%;
+    margin-left: 30%;
+    margin-right: 30%;
+    z-index: 1;
+    width: 40%;
+
+}
+.tablaFormulario{
+
+    width: 100%;
+
+
+}
+.primeraColumna{
+    width: 10%;
+    min-width: 200px;
+}
+.segundaColumna{
+    min-width: 380px;
+}
+.formularioTextHeight{
+    height: 28px;
+    min-width: 300px;
+    resize: none;
+}
+.formEdad{
+    width: 50px;
+    height: 30px;
+    resize: none;
+}
+
+.menu{
+    color: #fff;
+    font-family: 'Playfair Display SC', serif;
+    font-size: 30px;
+    margin-top: 15%;
+
+}
+.menu:hover{
+    color: #fff;
+    opacity: 0.5;
+
+}
+
+.lineMenu{
+    background-color: rgba(0, 0, 0, 0.5);
+    width:30%;
+    text-align: center;
+}
+
+.lineText{
+    float:left;
+    color: #fff;
+    font-family: 'Playfair Display SC', serif;
+    font-size: 15px;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+.lineTextapi{
+    float: left;
+    margin-left: 1%;
+    color: #fff;
+    font-family: 'Playfair Display SC', serif;
+    font-size: 10px;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+.lineTextDetalle{
+    color: #fff;
+    font-family: 'Playfair Display SC', serif;
+    font-size: 15px;
+}
+
+.aceptor{
+    margin-left: 2%;
+}
+.lineTextContainer{
+    position: absolute;
+    width: 30%;
+    margin-left: 45%;
+    margin-top: 22%;
+}
+.lineTextContainerDetalle{
+    float: left;
+    background-color: rgba(0, 0, 0, 0.2);
+    width: 45%;
+    margin-top: 15%;
+    margin-left: 5%;
+    z-index: 1;
+    height: auto;
+}
+.buttonSize{
+    width: 150px;
+    height: 50px;
+    margin-bottom: 2%; 
+
+}
+.situacionform{
+    margin-left: 10%;
+}
+.derechoAutor{
+    position: fixed;
+    color:#fff;
+    font-size: 10px;
+    bottom: 2%;
+    left: 1%;
+    z-index: 1000;
+}
+.frameVideo{
+    margin-top: 15%;
+    margin-left: 5%;
+    width: 40%;
+    float: left;
+    z-index: 1;
+}
+.gallery{
+    float:left;
+    z-index: 1;
+    left: 5%;
+    width: 90%;
+    margin-top: 3%;
+    margin-left: 5%;
+
+}
+.imageFrame{
+    width: 30%;
+    float: left;
+    margin-right: 3%;
+    margin-bottom: 2%;
+}
+
+.imgimg{
+    width: 100%;
+
+}
+
+.imgimg:hover{
+    background-color: #000;
+
+    -webkit-transition: all .3s ease-in;
+    -moz-transition: all .3s ease-in;
+    -ms-transition: all .3s ease-in;
+    -o-transition: all .3s ease-in;
+    transition: all .3s ease-in;
+    opacity: 1;
+    transform: scale(1.1);
+    -ms-transform: scale(1.1); /* IE 9 */
+    -webkit-transform: scale(1.1); /* Safari and Chrome */
+}
+.anchoaltoVideo{
+    width: 100%;
+    height: 420px;;
+}
+
+
+
+@media(max-width:1000px){
+
+
+    .menu{
+        color: #fff;
+        font-family: 'Playfair Display SC', serif;
+        font-size: 100%;
+        margin-top: 15%;
+
+    }
+    .lineTextContainer{
+        width: 70%;
+        margin-left: 20%;
+        margin-top: 13%;
+    }
+    .img1{
+    width: 100vw;
+    display: none;
+}
+    .img2{
+    width: 100vw;
+    display: block;
+}
+
+
+}

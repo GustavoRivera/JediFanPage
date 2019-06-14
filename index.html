@@ -1,0 +1,59 @@
+<html>
+    <head>
+        <title>Prueba</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link href="css/master.css" rel="stylesheet" type="text/css"/>
+        <link href="https://fonts.googleapis.com/css?family=Playfair+Display+SC:700" rel="stylesheet"> 
+        <script src="js/jquery-3.2.1.js" type="text/javascript"></script>
+        <script src="js/master.js" type="text/javascript"></script>
+        <script  type="text/javascript">
+            $(document).ready(function () {
+                $(".hiden").hide();
+                loadInicio();
+                $.ajax({
+                    url: "https://mindicador.cl/api",
+                    data: "",
+                    
+                    success: function(datos){
+                     $("#dolar").text(datos.dolar.valor);
+                    }
+                });
+            });
+        </script>
+
+    <body style="background-color: black">
+        <div class="hiden">
+            <div class="fondo">
+                <img  class="img1" src="img/Star-Wars-Jedi-Fallen-Order333.jpg" alt=""/>  
+                <img class="img2" src="img/wallpaper1000.png" alt=""/>
+            </div>
+            <div>
+                <table class="tablaMenu">
+                    <tr>
+                        <td class="lineMenu"><label class="menu"><a class="menu" href="index.html" style="text-decoration: none">HOME</a></label></td>
+                        <td class="lineMenu"><label  class="menu" ><a class="menu" href="Detalles.html" style="text-decoration: none"> DETALLES</a></label></td>
+                        <td class="lineMenu"><label class="menu"><a class="menu" href="preOrder.html" style="text-decoration: none">PRE-ORDER</a></label></td>
+                    </tr>
+                </table>
+                <div class="apiubication">
+                    <label class="lineTextapi">US=$</label><label class="lineTextapi" id="dolar"></label><br>
+                    <label class="lineTextapi">US=0.24*DENARIOS<br>US=0.12*IMPERIAL CREDITS</label>
+                </div>
+                <div class="lineTextContainer">
+                    <label class="lineText">Esta web esta dedicada al juego pronto a estrenarse, STARWARS JEDI: FALLEN ORDER.<br><br>
+                        Hecha por fans y para fans... <br><br>
+                        "MAY THE FORCE BE WITH YOU"
+                    </label>
+                </div>
+
+            </div>
+            <div class="derechoAutor">
+                <label> Pagina Creada por <br>
+                    Gustavo Rivera 2019</label>
+            </div>
+        </div>
+
+    </body>
+</html>
